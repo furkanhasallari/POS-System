@@ -11,7 +11,7 @@ namespace POS_System
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/Login.aspx");
         }
     }
 }
