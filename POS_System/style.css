@@ -1,0 +1,267 @@
+﻿/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #212529;
+}
+
+/* Login Page Styles */
+.login-page {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+    .login-container h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+.btn-success {
+    background-color: #28A745;
+    color: white;
+}
+
+    .btn-success:hover {
+        opacity: 0.9;
+    }
+
+.btn-danger {
+    background-color: #DC3545;
+    color: white;
+}
+
+    .btn-danger:hover {
+        opacity: 0.9;
+    }
+
+/* Card Styles */
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-3px);
+    }
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+/* Grid View Styles */
+.grid-view {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .grid-view th,
+    .grid-view td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .grid-view th {
+        background-color: #f8f9fa;
+        font-weight: 600;
+    }
+
+    .grid-view tr:hover {
+        background-color: rgba(0, 0, 0, 0.02);
+    }
+
+/* Alert Styles */
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+/* Navigation Styles */
+.nav-btn {
+    padding: 10px 18px;
+    margin: 5px 10px 5px 0;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .nav-btn:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.welcome-message {
+    font-size: 26px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+/* Filters Styles */
+.filters {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+    .filters label {
+        font-weight: 500;
+    }
+
+/* Summary Styles */
+.summary {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* Sale Summary Styles */
+.sale-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.total-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Print Styles */
+.print-section {
+    display: none;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .print-section, .print-section * {
+        visibility: visible;
+    }
+
+    .print-section {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 20px;
+        background: white;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .welcome-message {
+        margin-bottom: 15px;
+    }
+
+    .nav-btn {
+        margin-bottom: 10px;
+    }
+}
